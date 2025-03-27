@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catcafe</title>
+
+
+  <!-- Latest compiled and minified CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="estilos.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body id="menuPage">
+  <div id="fondo1" class="p-4">
+    <img id="imagen" src="https://cdn.akamai.steamstatic.com/steam/apps/1707140/capsule_616x353.jpg?t=1660545958"
+      class="rounded" width="500" height="200">
+    <h1 id="Titulos">Cat Café</h1>
+  </div>
+
+  <div class="container bg-light">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="btn-group btn-block">
+
+          <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Menú de comida</button>
+          <div class="dropdown-menu border-0">
+            <div id="tabla_comida" class="table">
+
+            </div>
+          </div>
+
+          <button id="btnShow5" class="btn btn-info">Nuestros gatos</button>
+          <button id="btnShow6" class="btn btn-info">Solicitud de adopción</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-10">
+        <div id="hide1">
+          <p id="Titulos3">Tiramisú</p>
+          <p class="text-center">Sumérgete en un viaje a Italia con nuestro Tiramisú artesanal, una obra maestra de
+            capas de bizcocho esponjoso impregnado de café recién hecho y licor suave, entre capas de crema de
+            mascarpone decadentemente suave. Cada bocado es una explosión de sabores ricos y satisfactorios que te
+            transportarán a las calles empedradas de Roma con cada cucharada.</p>
+          <p id="precio1"></p>
+          <img src="https://handletheheat.com/wp-content/uploads/2023/12/best-tiramisu-recipe-SQUARE.jpg"
+            class="rounded" width="500" height="300">
+          <p><button id="btnHide1" class="btn btn-info mt-2">Regresar</button></p>
+        </div>
+
+        <div id="hide2">
+          <p id="Titulos3">Cheesecakes</p>
+          <p class="text-center">Nuestro Cheesecake es una obra de arte culinaria que combina la suavidad sedosa del
+            queso crema con una base de galleta crujiente y un toque de dulzura irresistible. Cada porción está adornada
+            con una cascada de tu salsa favorita, desde la clásica fresa hasta el exótico coulis de mango, creando una
+            sinfonía de sabores que deleitarán tus sentidos y te dejarán anhelando más.</p>
+          <p id="precio2"></p>
+          <img id="imagen"
+            src="https://publish-p50513-e440257.adobeaemcloud.com/content/dam/Hersheyland_Mexico/es_mx/recipes/recipe-images/cheesecake-crema-cacahuate.webp"
+            class="rounded" width="500" height="300">
+          <p><button id="btnHide2" class="btn btn-info mt-2">Regresar</button></p>
+        </div>
+
+
+        <div id="hide3">
+          <p id="Titulos3">Roles de Canela</p>
+          <p class="text-center">Sumérgete en la comodidad y el calor de nuestros Roles de Canela recién horneados,
+            donde la masa esponjosa se enrolla con una generosa capa de azúcar de canela y se remata con un glaseado de
+            vainilla indulgente. Con cada mordisco, serás recibido por el aroma reconfortante de la canela y la dulzura
+            reconfortante que te hará sentir como si estuvieras abrazado por una manta caliente en un día frío de
+            invierno.</p>
+          <p id="precio3"></p>
+          <img id="imagen"
+            src="https://assets.elgourmet.com/wp-content/uploads/2023/03/cover_l2k85rdv0w_1200_800rolls.jpg"
+            class="rounded" width="500" height="300">
+          <p><button id="btnHide3" class="btn btn-info mt-2">Regresar</button></p>
+        </div>
+
+
+        <div id="hide4">
+          <p id="Titulos3">Donas</p>
+          <p class="text-center"> Nuestras donas son pequeños círculos de felicidad horneados con amor y adornados con
+            una variedad de glaseados y coberturas tentadoras. Desde el clásico glaseado de chocolate hasta los
+            divertidos confites de colores, cada dona es una explosión de dulzura que te dejará con ganas de más. ¿Quién
+            puede resistirse a la combinación perfecta de esponjosidad y indulgencia que ofrecen nuestras deliciosas
+            donas?</p>
+          <p id="precio4"></p>
+          <img id="imagen"
+            src="https://www.elsoldeorizaba.com.mx/doble-via/q6nnpo-receta-secreta-de-donas-krispy-kreme/ALTERNATES/LANDSCAPE_960/Receta-secreta-de-donas-Krispy-Kreme"
+            class="rounded" width="500" height="300">
+          <p><button id="btnHide4" class="btn btn-info mt-2">Regresar</button></p>
+        </div>
+
+      </div>
+    </div>
+
+    
+    <div class="row">
+      <div class="col-sm-10">
+        <div id="hide5">
+          <div id="Carrousel" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+              <li data-target="#demo" data-slide-to="4"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex">
+                  <div class="datos_gatos">
+                    <h3 id="nombre_gato1"></h3>
+                    <p id="edad_gato1"></p>
+                    <p id="pelo_gato1"></p>
+                    <p id="comportamiento_gato1"></p>
+                  </div>
+                  <img
+                    src="https://www.bunko.pet/__export/1610053926680/sites/debate/img/2021/01/07/9_de_las_razas_de_gatos_mxs_comunes_y_cxmo_identificarlas_1_crop1610053886700.jpeg_172596871.jpeg"
+                    class="rounded" alt="Gato 1">
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex">
+                  <div class="datos_gatos">
+                    <h3 id="nombre_gato2"></h3>
+                    <p id="edad_gato2"></p>
+                    <p id="pelo_gato2"></p>
+                    <p id="comportamiento_gato2"></p>
+                  </div>
+                  <img src="https://i.pinimg.com/originals/5e/ba/47/5eba47cf205c6fab7b7c1688f3f4ed26.jpg"
+                    class="rounded" alt="Gato 2">
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex">
+                  <div class="datos_gatos">
+                    <h3 id="nombre_gato3"></h3>
+                    <p id="edad_gato3"></p>
+                    <p id="pelo_gato3"></p>
+                    <p id="comportamiento_gato3"></p>
+                  </div>
+                  <img
+                    src="https://adopt-a-pet.s3.amazonaws.com/pet_pictures/assets/000/033/878/original/uploads_2F4bcb0b0c-8248-4b8a-b547-73e2da44cebb_2FIMG_20200526_224557_011.jpg"
+                    class="rounded" alt="Gato 3">
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex">
+                  <div class="datos_gatos">
+                    <h3 id="nombre_gato4"></h3>
+                    <p id="edad_gato4"></p>
+                    <p id="pelo_gato4"></p>
+                    <p id="comportamiento_gato4"></p>
+                  </div>
+                  <img src="https://www.recreoviral.com/wp-content/uploads/2015/11/17.7-730x487.jpg" class="rounded"
+                    alt="Gato 4">
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex">
+                  <div class="datos_gatos">
+                    <h3 id="nombre_gato5"></h3>
+                    <p id="edad_gato5"></p>
+                    <p id="pelo_gato5"></p>
+                    <p id="comportamiento_gato5"></p>
+                  </div>
+                  <img src="https://www.hogarmania.com/archivos/201808/gato-negro-animal-elegante-XxXx80.jpg"
+                    class="rounded" alt="Gato 5">
+                </div>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+
+
+          </div>
+          <p><button id="btnHide5" class="btn btn-info">Cerrar </button></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="hide6">
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4">
+          <h2>Solicitud de adopción</h2>
+        </div>
+        <div class="col-sm-4">
+          <form>
+            <input type="text" name="nombre_gato" placeholder="Nombre del gato" id="inf1" class="form-control mb-2">
+            <input type="text" name="nombre_usuario" placeholder="Nombre del adoptante" id="inf2"
+              class="form-control mb-2">
+            <input type="number" name="edad_usuario" placeholder="Edad del adoptante" id="inf3"
+              class="form-control mb-2">
+            <input type="text" name="email" placeholder="Correo electrónico" id="inf4" class="form-control mb-2">
+            <input type="number" name="telefono" placeholder="Número de teléfono" id="inf5" class="form-control mb-2">
+            <input type="button" value="Enviar" id="send" class="btn btn-info mb-2 btn-block">
+          </form>
+        </div>
+      </div>
+      <p><button id="btnHide6" class="btn btn-info">Regresar </button></p>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <h2 id="Titulos1">Sobre nosotros</h2>
+        <p>¡Bienvenido a nuestro encantador Cat Café, donde los amantes de los gatos y los entusiastas del café se unen
+          para una experiencia única! Fundado con la misión de crear un refugio acogedor para los felinos necesitados y
+          ofrecer un espacio relajante para disfrutar de deliciosos postres y cafés, nuestro Cat Café es mucho más que
+          una simple cafetería. Sumérgete en un ambiente lleno de amor, ronroneos y sabores exquisitos mientras apoyas
+          la adopción responsable de nuestros adorables gatitos rescatados. Aprende más sobre nuestra historia, nuestra
+          pasión por los felinos y nuestro compromiso con la comunidad. ¡Te invitamos a ser parte de nuestra familia
+          felina!</p>
+      </div>
+      <div class="col-sm-6">
+        <h2 id="Titulos1">Contáctanos</h2>
+        <p>Hemos habilitado un sistema de grabación de mensajes por voz que nos permite dar respuesta al 100% de
+          vuestras llamadas. Puedes contactarnos en el teléfono 917 30 36 80, los 365 días del año, 24 horas al día.
+          Cuéntanos brevemente cómo podemos ayudarte y déjanos un teléfono de contacto. Nosotros te llamamos en un corto
+          plazo de tiempo. También puedes contactarnos a través de correo electrónico para contarnos lo que necesites,
+          escribiendo a: escribe@catcafe@gmail.com</p>
+      </div>
+    </div>
+
+
+  </div> <!--Container termina-->
+
+  <script src="CatCafe.js"></script>
+</body>
+
+
+
+</html>
